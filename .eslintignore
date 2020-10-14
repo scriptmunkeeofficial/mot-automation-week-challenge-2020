@@ -1,0 +1,14 @@
+node_modules/*
+allure-report/*
+coverage/*
+results/*
+logs/*
+tmp/*
+.git/*
+.vscode/*
+package-lock.json
+README.md
+tags
+*.yml
+*.json
+.gitignore

@@ -1,0 +1,39 @@
+{
+  "name": "mot-automation-week-challenges-2020",
+  "version": "1.0.0",
+  "description": "Automation Challenges for MoT Test.bash() conference",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx wdio wdio.conf.js"
+  },
+  "keywords": [
+    "Automation",
+    "WDIO",
+    "JavaScript",
+    "Selenium"
+  ],
+  "author": "Ken Simeon",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "@wdio/cli": "^6.6.3",
+    "@wdio/dot-reporter": "^6.6.0",
+    "@wdio/local-runner": "^6.6.3",
+    "@wdio/mocha-framework": "^6.6.3",
+    "@wdio/spec-reporter": "^6.6.3",
+    "@wdio/sync": "^6.6.0",
+    "chromedriver": "^86.0.0",
+    "eslint": "^7.11.0",
+    "eslint-plugin-chai-expect": "^2.2.0",
+    "eslint-plugin-chai-friendly": "^0.6.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-mocha": "^8.0.0",
+    "eslint-plugin-wdio": "^6.6.0",
+    "faker": "^5.1.0",
+    "jsdoc": "^3.6.6",
+    "wdio-chromedriver-service": "^6.0.4"
+  }
+}
