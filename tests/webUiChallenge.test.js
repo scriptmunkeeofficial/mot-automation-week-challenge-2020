@@ -106,7 +106,53 @@ describe('Web UI Challenge', () => {
      *
      * You’ll have to click ‘Book this Room’, drag over dates you wish to book, complete the required information and submit the booking.
      */
-    it('Advanced', ()=> {
+    it.only('Advanced', ()=> {
+
+        // click on book this room button
+        // filling Pii (fname, lname, email, phone)
+        // calenar date objects suck. Might have to go by p text
+        // Drag & Drop date selection ( which are off by a day visuall time )
+        // will have to consider if selected dates are 
+        // Validate modal dialog for selected dates
+        //
+        // Test Directive
+        //  1. find current date object .rbc-month-view.rbc-month-row.rcb-row div[class="rbc-date-cell rbc-now rbc-current"]
+        //  2. determine 7 or 1 month later
+        //  3. determined date becomes the selector?
+        //  4. determine duration of stay
+        //  5. determine if duration will fall off existing calendar
+        //  6. Hard part, click & drag between rows
+        //
+        //  1. Find current date cell
+        //  2. Determine calendar row and cell location (0-7)
+        //  3. Logic
+        //      If last row & last 3 days, click Next month button
+        //      else select 2nd day of following week and drag to 1 day later
+        //  4. Store staring cell date click, Store ending cell date release
+        //
+
+        let todayPosition;
+        let selectedDates = [];
+
+        MainPage.bookRoomButton.scrollIntoView();
+        MainPage.bookRoomButton.click();
+
+        browser.waitUntil( ()=> {
+            return MainPage.roomBookingCancelButton.isExisting();
+        }, {
+            timeout: 5000,
+            timeoutMsg: 'Room reservation container did not load'
+        })
+
+        // browser.pause(3000);
+        // console.log('checking for today');
+
+        todayPosition = MainPage.getCalendarTodayPosition();
+        console.table(todayPosition)
+
+        selectedDates = MainPage.selectReservationDates(todayPosition.week +1, todayPosition.day -1, 2);
+        browser.pause(3000);
+        console.log(selectedDates);
 
     });
 });
