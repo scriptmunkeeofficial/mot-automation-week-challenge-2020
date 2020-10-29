@@ -1,5 +1,6 @@
 
 import Page from './page';
+import {get, post} from 'https';
 
 class AdminPage extends Page {
 
@@ -35,7 +36,7 @@ class AdminPage extends Page {
     openAdminPage() {
         console.log(`opening: ${browser.config.baseUrl}admin`);
         super.open(`${browser.config.baseUrl}admin`);
-        
+
         browser.waitUntil( ()=> {
             return this.adminLoginButton.isExisting();
         }, {
@@ -80,6 +81,47 @@ class AdminPage extends Page {
         }
 
         return 0;
+    }
+
+    // API Functions
+
+    loginAdminApi(uName = 'admin', passwd = 'passowrd') {
+        let responseData, authToken;
+
+        let postData = JSON.stringify({
+            username: uName,
+            password: passwd
+        });
+
+        const requestOptions = {
+            hostname: browser.config.baseUrl,
+            path: '/auth/login',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded, application/json',
+                "Content-Length": Buffer.byteLength(postData)
+            }
+        };
+
+        const req = post(requestOptions, (res)=> {
+            let data = '';
+            res.on('data', d => {
+                console.log(`DATA: ${d}`);
+                data += d;
+            })
+            res.on('end', () => {
+                console.log('No more data in response.');
+                console.log(data);
+                return data;
+            });
+        });
+
+        req.on('error', (e)=> {
+            console.error(e.messagesRows)
+        });
+        req.write(postData);
+        req.end();
+
+
+        return authToken;
     }
 }
 
