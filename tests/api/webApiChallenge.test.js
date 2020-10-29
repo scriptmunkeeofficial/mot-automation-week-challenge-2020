@@ -67,7 +67,7 @@ describe('Web API Challenge Test', () => {
 
     });
 
-    it.only('Intermediate: Room Creation', () => {
+    it.skip('Intermediate: Room Creation', () => {
         let authResp;
 
         // TODO: authenticate 

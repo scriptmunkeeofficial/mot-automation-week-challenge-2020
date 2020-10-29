@@ -34,8 +34,8 @@ class AdminPage extends Page {
     get modalMessage() { return this.modalBase.$$('.form-row')[3]; }
 
     openAdminPage() {
-        console.log(`opening: ${browser.config.baseUrl}admin`);
-        super.open(`${browser.config.baseUrl}admin`);
+        // console.log(`opening: ${browser.config.baseUrl}/#/admin`);
+        super.open(`${browser.config.baseUrl}/#/admin`);
 
         browser.waitUntil( ()=> {
             return this.adminLoginButton.isExisting();

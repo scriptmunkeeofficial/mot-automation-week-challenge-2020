@@ -1,6 +1,6 @@
 
-import MainPage from '../page_objects/main.page';
-import AdminPage from '../page_objects/admin.page';
+import MainPage from '../../page_objects/main.page';
+import AdminPage from '../../page_objects/admin.page';
 
 describe('Web UI Challenge', () => {
 
@@ -106,7 +106,7 @@ describe('Web UI Challenge', () => {
      *
      * You’ll have to click ‘Book this Room’, drag over dates you wish to book, complete the required information and submit the booking.
      */
-    it.only('Advanced', ()=> {
+    it.skip('Advanced', ()=> {
 
         // click on book this room button
         // filling Pii (fname, lname, email, phone)
