@@ -5,16 +5,18 @@
 https://club.ministryoftesting.com/t/what-is-automation-week/43663
 
 ### Challenges
-NOTE: make into tab | challenge | Status | Source Link |
+NOTE: make into tab 
 
-* [Web UI Automation 163](https://club.ministryoftesting.com/t/automation-week-challenges-web-ui/43665)
-* [Web API Automation](https://club.ministryoftesting.com/t/automation-week-challenges-web-api/43667)
-* [Javascript/React.js Automation](https://club.ministryoftesting.com/t/automation-week-challenges-javascript/43666)
-* [Mobile Automation](https://club.ministryoftesting.com/t/automation-week-challenges-mobile/43668)
-* [Test Data](https://club.ministryoftesting.com/t/automation-week-challenges-data/43669)
-* [Pipeline Challenges](https://club.ministryoftesting.com/t/automation-week-challenges-pipelines/43671)
-* [Exploratory Testing Challenges](https://club.ministryoftesting.com/t/automation-week-challenges-exploratory-testing/43672)
-* [Accessibility Testing](https://club.ministryoftesting.com/t/automation-week-challenges-accessibility/43670)
+| Challenge | Status | Source Link |
+| :------------- | :------------: | :------------: | 
+| Web UI Automation 163 | In Progress | [Link](https://club.ministryoftesting.com/t/automation-week-challenges-web-ui/43665)|
+| Web API Automation | In Progress | [Link](https://club.ministryoftesting.com/t/automation-week-challenges-web-api/43667) |
+| Javascript/React.js Automation | Not Started | [Link](https://club.ministryoftesting.com/t/automation-week-challenges-javascript/43666) |
+| Mobile Automation | Not Started | [Link](https://club.ministryoftesting.com/t/automation-week-challenges-mobile/43668) |
+| Test Data | Not Started | [Link](https://club.ministryoftesting.com/t/automation-week-challenges-data/43669) |
+| Pipeline Challenges | Not Started | [Link](https://club.ministryoftesting.com/t/automation-week-challenges-pipelines/43671)|
+| Exploratory Testing Challenges | Not Started | [Link](https://club.ministryoftesting.com/t/automation-week-challenges-exploratory-testing/43672) |
+| Accessibility Testing| Not Started | [Link](https://club.ministryoftesting.com/t/automation-week-challenges-accessibility/43670) |
 
 
 ## Repository Information
